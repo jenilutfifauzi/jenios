@@ -1,4 +1,5 @@
 import preset from "./vendor/filament/support/tailwind.config.preset";
+const colors = require('tailwindcss/colors')
 
 export default {
     presets: [preset],

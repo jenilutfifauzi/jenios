@@ -1,31 +1,32 @@
 <div>
-    <div class="mx-auto px-2">
+    <div class="mx-auto px-2 ">
         {{-- Navbar --}}
         <nav id="navbar" class="navbar bg-transparent z-10 relative top-0">
             <div class="navbar-start">
                 <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <button id="button" aria-labelledby="labeldiv" class="btn btn-ghost lg:hidden">
+                        <span id="labeldiv" class="sr-only">Toggle Navigation</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
-                    </div>
+                    </button>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Beranda</a></li>
+                        <li><a href="/">Beranda</a></li>
                         <li x-data="{ layanan: 'Layanan' }">
-                            <a x-text="layanan"></a>
+                            <span x-text="layanan"></span>
                             <ul class="p-2">
-                                <li><a>Jasa pembuatan website</a></li>
-                                <li><a>Jasa pembuatan dokument </a></li>
+                                <li><a href="/services/pembuatan-web">Jasa pembuatan website</a></li>
+                                <li><a href="/services/pembuatan-document">Jasa pembuatan document </a></li>
                             </ul>
                         </li>
-                        <li><a>Kontak kami</a></li>
+                        <li><a href="/contact">Kontak kami</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl">Jenios</a>
-    
+                <a href="/" class="btn btn-ghost text-xl">Jenios</a>
+
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -34,8 +35,8 @@
                         <details>
                             <summary class="menu">Layanan</summary>
                             <ul class="p-2">
-                                <li><a>Jasa pembuatan website</a></li>
-                                <li><a>Jasa pembuatan dokument </a></li>
+                                <li><a href="/services/pembuatan-web">Jasa pembuatan website</a></li>
+                                <li><a href="/services/pembuatan-document">Jasa pembuatan dokument </a></li>
                             </ul>
                         </details>
                     </li>
@@ -48,7 +49,6 @@
             </div>
         </nav>
 
-        {{-- Hero section --}}
         {{-- mobile background --}}
         <div class="absolute inset-x-0 top-0 z-15 overflow-hidden pl-[50%] lg:hidden"><img
                 src="https://tailwindui.com/plus/img/beams-basic-transparent.png" alt=""
@@ -117,7 +117,7 @@
                         </div>
                         <div class="flex gap-8 flex-wrap justify-center p-4">
                             <div class="w-full max-w-64 p-4 border border-gray-200 rounded-lg shadow sm:p-8 ">
-                                <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Basic plan</h5>
+                                <h2 class="mb-4 text-xl font-medium">Basic Plan</h2>
                                 <div class="flex items-baseline ">
                                     <span class="text-3xl font-semibold"> Rp</span>
                                     <span class="text-5xl font-extrabold tracking-tight">200 rb</span>
@@ -132,7 +132,7 @@
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
                                         <span
-                                            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">
+                                            class="text-base font-normal leading-tight">
                                             Revisi 3x</span>
                                     </li>
                                     <li class="flex">
@@ -143,7 +143,7 @@
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
                                         <span
-                                            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Landing
+                                            class="text-base font-normal leading-tight">Landing
                                             page</span>
                                     </li>
                                     <li class="flex">
@@ -154,29 +154,30 @@
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
                                         <span
-                                            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Source
+                                            class="text-base font-normal leading-tight">Source
                                             Code</span>
                                     </li>
                                     <li class="flex line-through decoration-gray-500">
-                                        <svg class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
+                                        <svg class="flex-shrink-0 w-4 h-4 text-gray-100 dark:text-gray-900"
                                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                             viewBox="0 0 20 20">
                                             <path
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
-                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">Free
+                                        <span class="text-base font-normal leading-tight text-gray-900 ms-3">Free
                                             Hosting </span>
                                     </li>
                                 </ul>
-                                <x-filament::button href="https://wa.me/6281388050997" tag="a"
+                                <a href="https://wa.me/6281388050997"
                                     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">
                                     Pesan sekarang
-                                </x-filament::button>
+                                </a>
                             </div>
 
                             <div
                                 class="w-full max-w-64 p-4 border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-                                <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Middle plan</h5>
+                                <h3 class="mb-4 text-xl font-medium">Middle Plan</h3>
+
                                 <div class="flex items-baseline ">
                                     <span class="text-3xl font-semibold"> Rp</span>
                                     <span class="text-5xl font-extrabold tracking-tight">1 jt</span>
@@ -191,7 +192,7 @@
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
                                         <span
-                                            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">
+                                            class="text-base font-normal leading-tight">
                                             Revisi Unlimited</span>
                                     </li>
                                     <li class="flex">
@@ -202,7 +203,7 @@
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
                                         <span
-                                            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">
+                                            class="text-base font-normal leading-tight">
                                             Web Sederhana</span>
                                     </li>
                                     <li class="flex">
@@ -213,7 +214,7 @@
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
                                         <span
-                                            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Source
+                                            class="text-base font-normal leading-tight">Source
                                             Code</span>
                                     </li>
                                     <li class="flex decoration-gray-500">
@@ -224,20 +225,21 @@
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
                                         <span
-                                            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Free
+                                            class="text-base font-normal leading-tight">Free
                                             Hosting </span>
                                     </li>
                                 </ul>
-                                <x-filament::button href="https://wa.me/6281388050997" tag="a"
+                                <a href="https://wa.me/6281388050997"
                                     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">
                                     Pesan sekarang
-                                </x-filament::button>
+                                </a>
                             </div>
 
                             <div
                                 class="w-full max-w-64 p-4 border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-                                <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Complate plan
-                                </h5>
+                                <h3 class="mb-4 text-xl font-medium">Complete Plan
+                                </h3>
+
                                 <div class="flex items-baseline">
                                     <span class="text-3xl font-semibold"> Rp</span>
                                     <span class="text-5xl font-extrabold tracking-tight">3 jt</span>
@@ -252,7 +254,7 @@
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
                                         <span
-                                            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">
+                                            class="text-base font-normal leading-tight">
                                             Revisi Unlimited</span>
                                     </li>
                                     <li class="flex">
@@ -263,7 +265,7 @@
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
                                         <span
-                                            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Web
+                                            class="text-base font-normal leading-tight">Web
                                             Custom</span>
                                     </li>
                                     <li class="flex">
@@ -274,7 +276,7 @@
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
                                         <span
-                                            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">Source
+                                            class="text-base font-normal leading-tight">Source
                                             Code</span>
                                     </li>
                                     <li class="flex decoration-gray-500">
@@ -284,14 +286,14 @@
                                             <path
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
-                                        <span class="text-base font-normal leading-tight text-gray-500 ms-3">Free
+                                        <span class="text-base font-normal leading-tight text-gray-900 ms-3">Free
                                             Hosting </span>
                                     </li>
                                 </ul>
-                                <x-filament::button href="https://wa.me/6281388050997" tag="a"
+                                <a href="https://wa.me/6281388050997"
                                     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">
                                     Pesan sekarang
-                                </x-filament::button>
+                                </a>
                             </div>
                         </div>
                     </section>
@@ -309,5 +311,4 @@
             </div>
         </div>
     </div>
-</div>
 </div>
