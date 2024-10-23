@@ -118,7 +118,7 @@
                         <div class="flex gap-8 flex-wrap justify-center p-4">
                             <div class="w-full max-w-64 p-4 border border-gray-200 rounded-lg shadow sm:p-8 ">
                                 <h2 class="mb-4 text-xl font-medium">Basic Plan</h2>
-                                <div class="flex items-baseline ">
+                                <div class="flex items-baseline">
                                     <span class="text-3xl font-semibold"> Rp</span>
                                     <span class="text-5xl font-extrabold tracking-tight">200 rb</span>
 
@@ -131,8 +131,7 @@
                                             <path
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
-                                        <span
-                                            class="text-base font-normal leading-tight">
+                                        <span class="text-base font-normal leading-tight ms-3">
                                             Revisi 3x</span>
                                     </li>
                                     <li class="flex">
@@ -142,8 +141,7 @@
                                             <path
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
-                                        <span
-                                            class="text-base font-normal leading-tight">Landing
+                                        <span class="text-base font-normal leading-tight ms-3">Landing
                                             page</span>
                                     </li>
                                     <li class="flex">
@@ -153,8 +151,7 @@
                                             <path
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
-                                        <span
-                                            class="text-base font-normal leading-tight">Source
+                                        <span class="text-base font-normal leading-tight ms-3">Source
                                             Code</span>
                                     </li>
                                     <li class="flex line-through decoration-gray-500">
@@ -164,8 +161,7 @@
                                             <path
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
-                                        <span class="text-base font-normal leading-tight text-gray-900 ms-3">Free
-                                            Hosting </span>
+                                        <span class="text-base font-normal text-gray-900 ms-3">Free Hosting </span>
                                     </li>
                                 </ul>
                                 <a href="https://wa.me/6281388050997"
@@ -191,8 +187,7 @@
                                             <path
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
-                                        <span
-                                            class="text-base font-normal leading-tight">
+                                        <span class="text-base font-normal leading-tight ms-3">
                                             Revisi Unlimited</span>
                                     </li>
                                     <li class="flex">
@@ -202,8 +197,7 @@
                                             <path
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
-                                        <span
-                                            class="text-base font-normal leading-tight">
+                                        <span class="text-base font-normal leading-tight ms-3">
                                             Web Sederhana</span>
                                     </li>
                                     <li class="flex">
@@ -213,8 +207,7 @@
                                             <path
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
-                                        <span
-                                            class="text-base font-normal leading-tight">Source
+                                        <span class="text-base font-normal leading-tight ms-3">Source
                                             Code</span>
                                     </li>
                                     <li class="flex decoration-gray-500">
@@ -224,8 +217,7 @@
                                             <path
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
-                                        <span
-                                            class="text-base font-normal leading-tight">Free
+                                        <span class="text-base font-normal leading-tight ms-3">Free
                                             Hosting </span>
                                     </li>
                                 </ul>
@@ -253,8 +245,7 @@
                                             <path
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
-                                        <span
-                                            class="text-base font-normal leading-tight">
+                                        <span class="text-base font-normal leading-tight ms-3">
                                             Revisi Unlimited</span>
                                     </li>
                                     <li class="flex">
@@ -264,8 +255,7 @@
                                             <path
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
-                                        <span
-                                            class="text-base font-normal leading-tight">Web
+                                        <span class="text-base font-normal leading-tight ms-3">Web
                                             Custom</span>
                                     </li>
                                     <li class="flex">
@@ -275,8 +265,7 @@
                                             <path
                                                 d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                         </svg>
-                                        <span
-                                            class="text-base font-normal leading-tight">Source
+                                        <span class="text-base font-normal leading-tight ms-3">Source
                                             Code</span>
                                     </li>
                                     <li class="flex decoration-gray-500">
@@ -303,12 +292,90 @@
         </div>
 
         {{-- Pengajuan pembuatan website --}}
-        <div class="lg:px-8 mx-auto px-4 sm:px-6 md:px-4 xl:max-w-7xl 2xl:max-w-screen-2xl">
-            <div class="space-y-10 sm:space-y-24 mt-4">
-                <h1 class="text-lg font-bold tracking-tighter text-fg sm:mt-0 sm:text-lg/[3.5rem] md:mt-10 md:text-lg">
-                    Pengajuan Pembuatan Website </h1>
+        <div class="lg:px-8 mx-auto px-4 sm:px-6 md:px-4 xl:max-w-7xl 2xl:max-w-screen-2xl p-4">
 
-            </div>
+            {{-- porto --}}
+            <section id="portofolio" class="py-6 sm:py-24">
+                <div class="lg:px-8 mx-auto px-4 sm:px-6 md:px-4 xl:max-w-7xl 2xl:max-w-screen-2xl">
+                    <div class="mb-6">
+                        <h2 class="text-lg font-semibold leading-6 tracking-tight">Masih bingung?</h2>
+                        <p class="max-w-md text-sm text-muted-fg">
+                            Lihat portofolio project kami yang sudah selesai, dan buktikan kualitas layanan kami.
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <h4 class="mb-4 text-4xl font-extrabold">Portofolio Project</h1>
+                </div>
+                 <div class="flex gap-8 flex-col lg:flex-row justify-center items-center lg:p-10">
+                    <div class="carousel carousel-vertical rounded-box h-96 w-full">
+                        <div class="carousel-item h-full w-full">
+                            <img src="{{ asset('assets/images/f05f5db2-55b2-45df-b19d-021bfd3aef04.jpeg')}}" class="object-cover h-full w-full" />
+                        </div>
+                        <div class="carousel-item h-full w-full">
+                            <img src="{{ asset('assets/images/983b3ab5-7149-4666-81d9-625aa01ec281.jpg')}}" class="object-cover h-full w-full" />
+                        </div>
+                        <div class="carousel-item h-full w-full">
+                            <img src="{{ asset('assets/images/edfa3715-5706-446e-ae43-acc8ef60e00e.jpeg')}}" class="object-cover h-full w-full" />
+                        </div>
+                    </div>
+                
+                    <div class="carousel carousel-vertical rounded-box h-96 w-full">
+                        <div class="carousel-item h-full w-full">
+                            <img src="{{ asset('assets/images/oyebcxas-2024-09-2916-22-51.png')}}" class="object-cover h-full w-full" />
+                        </div>
+                        <div class="carousel-item h-full w-full">
+                            <img src="{{ asset('assets/images/ngdadbfj-2024-09-2916-24-16.png')}}" class="object-cover h-full w-full" />
+                        </div>
+                        <div class="carousel-item h-full w-full">
+                            <img src="{{ asset('assets/images/uewweus-2024-09-2916-25-12.png')}}" class="object-cover h-full w-full" />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+
+        {{-- footer --}}
+        <footer class="footer footer-center text-base-content rounded p-10">
+            <nav class="grid grid-flow-col gap-4">
+                <a href="/about-us" class="link link-hover">About us</a>
+                <a href="/contact" class="link link-hover">Contact</a>
+                <a href="/portofolio" class="link link-hover">Portofolio</a>
+            </nav>
+            <nav>
+                <div class="grid grid-flow-col gap-4">
+                    <a href="https://x.com/jeni_lutfi2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@jenilutfifauzi5841">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/jenitmvn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+            <aside>
+                <div x-data="{ year: new Date().getFullYear() }">
+                    <p>Copyright © <span x-text='year'></span> - All right reserved by Jenios Development</p>
+                </div>
+            </aside>
+
+        </footer>
+
     </div>
 </div>
