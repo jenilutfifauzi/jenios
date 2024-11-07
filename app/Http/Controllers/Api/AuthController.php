@@ -119,13 +119,68 @@ class AuthController extends Controller
         ]);
     }
 
+    public function findUser(Request $request)
+    {
+        $user_id = $request->user_id;
+        $user = User::find($user_id);
+        return response()->json([
+            'statusCode' => 200,
+            'message' => 'User data',
+            'data' => $user
+        ]);
+    }
+
     public function user(Request $request)
     {
         $users = User::all();
         return response()->json([
             'statusCode' => 200,
-            'message' => 'User data',
+            'message' => 'Register success',
             'data' => $users
+        ]);
+    }
+
+    public function updateUser(Request $request, $id)
+    {
+        $validator = Validator::make(
+            $request->all(),
+            [
+                'name'      => 'required|string|max:255',
+                'username'  => 'required|string|max:10|unique:users',
+                'email'     => 'required|string|email|max:255|unique:users',
+                'phone'     => 'required|numeric'
+            ],
+            [
+                'name.required'     => 'Nama wajib diisi',
+                'name.string'       => 'Nama harus berupa string',
+                'name.max'          => 'Nama maksimal 255 karakter',
+                'username.required' => 'Username wajib diisi',
+                'username.string'   => 'Username harus berupa string',
+                'username.unique'   => 'Username sudah terdaftar',
+                'username.max'      => 'Username maksimal 10 karakter',
+                'email.required'    => 'Email wajib diisi',
+                'email.string'      => 'Email harus berupa string',
+                'email.email'       => 'Email harus berupa email',
+                'email.max'         => 'Email maksimal 255 karakter',
+                'email.unique'      => 'Email sudah terdaftar',
+                'phone.required'    => 'Phone wajib diisi',
+                'phone.numeric'     => 'Phone harus berupa angka'
+            ]
+        );
+        if ($validator->fails()) {
+            return response()->json($validator->errors());
+        }
+        $user = User::find($id);
+        $user->name     = $request->name;
+        $user->username = $request->username;
+        $user->email    = $request->email;
+        $user->phone    = $request->phone;
+        $user->save();
+
+        return response()->json([
+            'statusCode' => 200,
+            'message' => 'Update user success',
+            'data' => $user
         ]);
     }
 }

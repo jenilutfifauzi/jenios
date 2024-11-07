@@ -29,6 +29,10 @@ Route::post('/v1/login', [AuthController::class, 'login'])->name('api.login.v2')
 Route::middleware('auth:sanctum')->group(function () {
     // Logout
     Route::post('/v1/logout', [AuthController::class, 'logout'])->name('api.logout.v2');
+    // Get user
+    Route::get('/v1/user', [AuthController::class, 'findUser'])->name('api.user.v2');
     // User
     Route::get('/v1/users', [AuthController::class, 'user'])->name('api.user.v2');
+    // Update user
+    Route::put('/v1/user/update/{id}', [AuthController::class, 'updateUser'])->name('api.user.update.v2');
 });
